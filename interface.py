@@ -9,8 +9,6 @@ from config import batchsize as the_batch_size
 from config import epochs as total_epochs
 from config import train_data_path, test_data_path, save_path
 
-# Now, instead of calling the trainer here, you'd run the training from another script
-# or directly from the command line. This file can still serve as an organization point
-# for model and prediction functionality.
+
 
 
