@@ -1,9 +1,8 @@
-# Waste Classification Model  using CNN
+# Waste Classification Model Using CNN
 
-This repository contains a deep learning model for classifying images into two categories. The model is built using PyTorch and is designed to work with custom datasets. Below, you'll find details about the model architecture, input/output specifications, and how to use the model for training and inference.
+This repository contains a deep learning model for classifying waste images into two categories. The model is built using PyTorch and is designed to work with custom datasets. Below, you'll find details about the model architecture, input/output specifications, and how to use the model for training and inference.
 
 ---
-
 
 ## Model Architecture
 
@@ -35,6 +34,24 @@ The model is implemented in [`model.py`](model.py) as the `MyCustomModel` class.
 
 ---
 
+## Dataset
+
+The dataset used for training and testing the model can be downloaded from Kaggle:  
+[Waste Classification Dataset](https://www.kaggle.com/datasets)
+
+Ensure the dataset is organized in the format required by `torchvision.datasets.ImageFolder`:
+```
+dataset/
+├── TRAIN/
+│   ├── Class0/
+│   └── Class1/
+└── TEST/
+    ├── Class0/
+    └── Class1/
+```
+
+---
+
 ## Training the Model
 
 To train the model, use the `my_descriptively_named_train_function` function in [`train.py`](train.py). The training process includes:
@@ -42,4 +59,64 @@ To train the model, use the `my_descriptively_named_train_function` function in 
 - Using the Adam optimizer and CrossEntropyLoss.
 - Saving the trained model weights to the specified path.
 
+### Example Command
+```bash
+python train.py
+```
 
+---
+
+## Inference
+
+To make predictions on new images, use the `cryptic_inf_f` function in [`predict.py`](predict.py). This function:
+1. Loads the trained model weights.
+2. Preprocesses the input image to match the model's requirements.
+3. Outputs the predicted class.
+
+### Example Usage
+```python
+from predict import cryptic_inf_f
+
+image_path = "path/to/image.jpg"
+predicted_class = cryptic_inf_f(image_path)
+print(f"Predicted Class: {predicted_class}")
+```
+
+---
+
+## Dependencies
+
+The project requires the following Python libraries:
+- `torch`
+- `torchvision`
+- `Pillow`
+
+Install the dependencies using:
+```bash
+pip install torch torchvision Pillow
+```
+
+---
+
+## Folder Structure
+
+```
+project_Monbikash_Gayan/
+├── config.py          # Configuration file with hyperparameters and paths
+├── dataset.py         # Dataset and DataLoader definitions
+├── interface.py       # Interface for model, training, and prediction
+├── model.py           # Model architecture
+├── predict.py         # Prediction script
+├── train.py           # Training script
+├── checkpoints/       # Folder for saving model weights
+├── data/              # Folder containing image data
+└── readme.md          # Project documentation
+```
+
+---
+
+## Conclusion
+
+This project demonstrates the use of Convolutional Neural Networks (CNNs) for waste classification. The model is lightweight and can be trained on custom datasets. It can be extended to classify more categories or integrated into real-world applications like waste sorting systems.
+
+Feel free to contribute to this project or use it as a base for your own experiments!
