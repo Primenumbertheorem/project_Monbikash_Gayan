@@ -1,6 +1,6 @@
 # Waste Classification Model Using CNN
 
-This repository contains a deep learning model for classifying waste images into two categories. The model is built using PyTorch and is designed to work with custom datasets. Below, you'll find details about the model architecture, input/output specifications, and how to use the model for training and inference.
+This repository contains a deep learning model for classifying waste images into two categories-Organic(O) and Recyclable(R). The model is built using PyTorch and is designed to work with custom datasets. Below, you'll find details about the model architecture, input/output specifications, and how to use the model for training and inference.
 
 ---
 
@@ -37,7 +37,7 @@ The model is implemented in [`model.py`](model.py) as the `MyCustomModel` class.
 ## Dataset
 
 The dataset used for training and testing the model can be downloaded from Kaggle:  
-[Waste Classification Dataset](https://www.kaggle.com/datasets)
+[Waste Classification Dataset]([https://www.kaggle.com/datasets](https://www.kaggle.com/datasets/techsash/waste-classification-data/data))
 
 Ensure the dataset is organized in the format required by `torchvision.datasets.ImageFolder`:
 ```
@@ -98,25 +98,9 @@ pip install torch torchvision Pillow
 
 ---
 
-## Folder Structure
 
-```
-project_Monbikash_Gayan/
-├── config.py          # Configuration file with hyperparameters and paths
-├── dataset.py         # Dataset and DataLoader definitions
-├── interface.py       # Interface for model, training, and prediction
-├── model.py           # Model architecture
-├── predict.py         # Prediction script
-├── train.py           # Training script
-├── checkpoints/       # Folder for saving model weights
-├── data/              # Folder containing image data
-└── readme.md          # Project documentation
-```
-
----
 
 ## Conclusion
 
-This project demonstrates the use of Convolutional Neural Networks (CNNs) for waste classification. The model is lightweight and can be trained on custom datasets. It can be extended to classify more categories or integrated into real-world applications like waste sorting systems.
+This project demonstrates the use of Convolutional Neural Networks (CNNs) for waste classification. The model is lightweight and can be trained on custom datasets. It can be extended to classify more categories or integrated into real-world applications like waste sorting systems, promoting sustainable waste management practices.
 
-Feel free to contribute to this project or use it as a base for your own experiments!
