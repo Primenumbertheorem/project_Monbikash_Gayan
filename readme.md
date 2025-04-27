@@ -4,15 +4,6 @@ This repository contains a deep learning model for classifying images into two c
 
 ---
 
-## Table of Contents
-- [Model Architecture](#model-architecture)
-- [Input and Output](#input-and-output)
-- [Training the Model](#training-the-model)
-- [Making Predictions](#making-predictions)
-- [Dependencies](#dependencies)
-- [Folder Structure](#folder-structure)
-
----
 
 ## Model Architecture
 
