@@ -38,7 +38,7 @@ The model is implemented in [`model.py`](model.py) as the `MyCustomModel` class.
 ## Dataset
 
 The dataset used for training and testing the model can be downloaded from Kaggle:  
-[Waste Classification Dataset](https://www.kaggle.com/datasets)
+[Waste Classification Dataset](https://www.kaggle.com/datasets/techsash/waste-classification-data/data)
 
 Ensure the dataset is organized in the format required by `torchvision.datasets.ImageFolder`:
 ```
