@@ -1,6 +1,7 @@
 # Waste Classification Model Using CNN
 
-This repository contains a deep learning model for classifying waste images into two categories-Organic(O) and Recyclable(R). The model is built using PyTorch and is designed to work with custom datasets. Below, you'll find details about the model architecture, input/output specifications, and how to use the model for training and inference.
+
+This repository contains a deep learning model for classifying waste images into two categories-Organic(O) and Recyclable(R). The model is built using PyTorch and is designed to work with custom datasets. Below, there are details about the model architecture, input/output specifications, and how to use the model for training and inference.
 
 ---
 
