@@ -1,4 +1,4 @@
-# Unicorn Image Classification Model
+# Waste Classification Model  using CNN
 
 This repository contains a deep learning model for classifying images into two categories. The model is built using PyTorch and is designed to work with custom datasets. Below, you'll find details about the model architecture, input/output specifications, and how to use the model for training and inference.
 
@@ -42,6 +42,4 @@ To train the model, use the `my_descriptively_named_train_function` function in 
 - Using the Adam optimizer and CrossEntropyLoss.
 - Saving the trained model weights to the specified path.
 
-### Example Command
-```bash
-python [train.py](http://_vscodecontentref_/1)
+
